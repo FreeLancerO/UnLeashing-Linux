@@ -1,0 +1,365 @@
+**************************************************************************
+XAMMPP COMMANDS:
+**************************************************************************
+
+sudo /opt/lampp/lampp start :This command is used to start xammpp services.
+sudo /opt/lampp/lampp stop :This command is used to stop xammp services.
+sudo /opt/lampp/lampp security :This command is used to check xammpp security.
+sudo ./manager-linux-x64.run :This command is used for running xammpp in GUI.
+
+**************************************************************************
+BASIC COMMANDS:
+**************************************************************************
+
+pwd :Shows your current working directory.
+
+ls command and its options
+**************************************************************************
+
+ls :Shows the contents of the directory.
+-a: List all files, even those with names that begin
+	with a period, which are normally not listed
+	(i.e., hidden).
+-h: In long format listings, display file sizes in
+	human-readable format rather than in bytes.
+-r: Display the results in reverse order. Normally,
+	ls displays its results in ascending alpha-
+	betical order.
+-S: Sort results by file size.
+-t: Sort by modification time.
+-F: This option will append an indicator character
+	to the end of each listed name (for example, a
+	forward slash if the name is a directory).
+-l: Display results in long format.
+
+cd xxxx :Change the directory eg cd /opt/bin takes you to the bin directory.
+
+cd / :Takes you back to the root directory.
+
+cd .. :Takes you one level up on the directory.
+
+cd . :This is the current directory.
+
+cd ~ :Takes you to the home directory no matter the directory you are in.
+
+mkdir xxxx :Makes a directory e.g mkdir Eclipse.
+
+rmdir xxxx :Deletes a directory e.g rmdir Test. Applies when the directory is empty.
+
+rm -R xxxx :Deletes a directory with all of its contents eg rm -R Musik.
+
+rm * :Deletes everything--->this is a very dangerous command to run!!!
+
+**************************************************************************
+NETWORK COMMANDS:
+*************************************************************************
+ifconfig - displays information network
+iwconfig - displays information from wireless
+sudo iwlist scan - scans wireless networks
+sudo /etc/init.d/networking restart - reset the network
+(file) /etc/network/interfaces - manual configuration
+ifup interface - bring online interface
+ifdown interface - diable interface
+
+*************************************************************************
+FIREWALL COMMANDS:
+*************************************************************************
+ufw enable - turn on the firewall
+ufw disable - turn off the firewall
+ufw default allow - allow all connections by default
+ufw default deny - drop all connections by default
+ufw status - current rules
+ufw allow port - to allow traffic on port
+ufw deny port - port block
+ufw deny from ip - ip block
+
+*************************************************************************
+APPLICATION COMMANDS:
+*************************************************************************
+nautilus - File Manager (GNOME)
+dolphin - File Manager (KDE)
+konqueror - Web browser (KDE)
+kate - Text editor (KDE)
+gedit - Text editor (GNOME)
+
+*************************************************************************
+COMMANDS FOR PACKAGE MANAGER:
+*************************************************************************
+apt-get update - refresh updates available
+apt-get upgrade - update all packages
+apt-get dist-upgrade - version update
+apt-get install pkg - installing pkg
+apt-remove pkg - uninstall pkg
+apt-get autoremove - removing packages obsotletos
+apt-get -f install - try to fix packages
+dpkg -configure -a - try to fix a broken package
+dpkg -i pkg.deb - install file pkg.deb
+(file) /etc/apt/sources.list - list of repositories APT
+
+*************************************************************************
+SERVIVE SYSTEM COMMANDS:
+*************************************************************************
+start service - service to start work (Upstart)
+stop service - service to stop working (Upstart)
+status service - check if service is running (Upstart)
+/etc/init.d/service start - start service (SysV)
+/etc/init.d/service stop - stop service (SysV)
+/etc/init.d/service status - check services (SysV)
+/etc/init.d/service restart - reset service (SysV)
+runlevel - get current runlevel
+
+*************************************************************************
+PRIVILEGE COMMANDS:
+*************************************************************************
+sudo command - run command as root
+sudo su - root shell open
+sudo su user - open shell as a user
+sudo -k - forget your password sudo
+gksudo command - sudo visual dialog (GNOME)
+kdesudo command - sudo visual dialog (KDE)
+passwd - change your password
+
+*************************************************************************
+DISPLAY COMMANDS:
+*************************************************************************
+sudo /etc/init.d/gdm restart – reset X (Gnome)
+sudo /etc/init.d/kdm restart – reset X (KDE)
+(file) /etc/X11/xorg.conf – show Configuration
+sudo dpkg-reconfigure - reconfigure xserver-xorg-phigh – reset configuration
+Ctrl+Alt+Bksp – Display reset if frozen
+Ctrl+Alt+FN – switch to tty N
+Ctrl+Alt+F7 – switch back to X display
+
+*************************************************************************
+SPECIAL PACKAGES FOR COMMANDS:
+*************************************************************************
+ubuntu-desktop – Setting the standard Ubuntu
+kubuntu-desktop – KDE Desktop
+xubuntu-desktop – desktop XFCE
+ubuntu-minimal – core earnings Ubuntu
+ubuntu-standard – the standard utilities Ubuntu
+ubuntu-restricted-extras – not free, but useful
+kubuntu-restricted-extras – ditto KDE
+xubuntu-restricted-extras – ditto XFCE
+build-essential – packages used to compile
+linux-image-generic – latest generic kernel image
+linux-headers-generic – latest headlines
+
+*************************************************************************
+KEYBOARD SHORTCUTS FOR GNOME DESKTOP:
+*************************************************************************
+Ctrl + Alt + F1 = Switch to the first virtual terminal
+Ctrl + Alt + F2(F3)(F4)(F5)(F6) = Select the different virtual terminals
+Ctrl + Alt + F7 = Restore back to the current terminal session with X
+Ctrl + Alt + Backspace = Restart GNOME
+Alt + Tab = Switch between open programs
+Ctrl + Alt + L = Lock the screen.
+Alt + F1 = opens the Applications menu
+Alt + F2 = opens the Run Application dialog box.
+Alt + F3 = opens the Deskbar Applet
+Alt + F4 = closes the current window.
+Alt + F5 = unmaximizes the current window.
+Alt + F7 = move the current window
+Alt + F8 = resizes the current window.
+Alt + F9 = minimizes the current window.
+Alt + F10 =  maximizes the current window.
+Alt + Space = opens the window menu.
+Ctrl + Alt + + = Switch to next X resolution
+Ctrl + Alt + - = Switch to previous X resolution
+Ctrl + Alt + Left/Right = move to the next/previous workspace
+
+*************************************************************************
+KEYBOARD SHORTCUTS FOR TERMINAL:
+*************************************************************************
+Ctrl + A = Move cursor to beginning of line
+Ctrl + E = Move cursor to end of line
+Ctrl + C = kills the current process.
+Ctrl + Z = sends the current process to the background.
+Ctrl + D = logs you out.
+Ctrl + R = finds the last command matching the entered letters.
+Enter a letter, followed by Tab + Tab = lists the available commands beginning with those letters.
+Ctrl + U = deletes the current line.
+Ctrl + K = deletes the command from the cursor right.
+Ctrl + W = deletes the word before the cursor.
+Ctrl + L = clears the terminal output
+Shift + Ctrl + C = copy the highlighted command to the clipboard.
+Shift + Ctrl + V (or Shift + Insert) = pastes the contents of the clipboard.
+Alt + F = moves forward one word.
+Alt + B = moves backward one word.
+Arrow Up/Down = browse command history
+Shift + PageUp / PageDown = Scroll terminal output
+
+*************************************************************************
+KEYBOARD SHORTCUTS FOR COMPIZ:
+*************************************************************************
+Alt + Tab = switch between open windows
+Win + Tab = switch between open windows with Shift Switcher or Ring Switcher effect
+Win + E = Expo, show all workspace
+Ctrl + Alt + Down = Film Effect
+Ctrl + Alt + Left mouse button = Rotate Desktop Cube
+Alt + Shift + Up = Scale Windows
+Ctrl + Alt + D = Show Desktop
+Win + Left mouse button = take screenshot on selected area
+Win + Mousewheel = Zoom In/Out
+Alt + Mousewheel = Transparent Window
+Alt + F8 = Resize Window
+Alt + F7 = Move Window
+Win + P = Add Helper
+F9 = show widget layer
+Shift + F9 = show water effects
+Win + Shift + Left mouse button = Fire Effects
+Win + Shift + C = Clear Fire Effects
+Win + Left mouse button = Annotate: Draw
+Win + 1 = Start annotation
+Win + 3 = End annotation
+Win + S = selects windows for grouping
+Win + T = Group Windows together
+Win + U = Ungroup Windows
+Win + Left/Right = Flip Windows
+
+************************************************************************
+KEYBOARD SHORTCUTS FOR NAUTILUS:
+**************************************************************************
+Shift + Ctrl + N = Create New Folder
+Ctrl + T = Delete selected file(s) to trash
+Alt + ENTER = Show File/Folder Properties
+Ctrl + 1 = Toggle View As Icons
+Ctrl + 2 = Toggle View As List
+Shift + Right = Open Directory (Only in List View)
+Shift + Left = Close Directory (Only in List View)
+Ctrl + S = Select Pattern
+F2 = Rename File
+Ctrl + A = Select all files and folders
+Ctrl + W = Close Window
+Ctrl + Shift + W = Close All Nautilus Windows
+Ctrl + R = Reload Nautilus Window
+Alt + Up = Open parent directory
+Alt + Left = Back
+Alt + Right = Forward
+Alt + Home = go to Home folder
+Ctrl + L = go to location bar
+F9 = Show sidepane
+Ctrl + H = Show Hidden Files
+Ctrl + + = Zoom In
+Ctrl + - = Zoom Out
+Ctrl + 0 = Normal Size
+
+*************************************************************************
+GENERAL KEYBOARD SHORTCUTS:
+************************************************************************
+Ctrl + A = Select all
+Ctrl + C = Copy the highlighted content to clipboard
+Ctrl + V = Paste the clipboard content
+Ctrl + N = New (Create a new document, not in terminal)
+Ctrl + O = Open a document
+Ctrl + S = Save the current document
+Ctrl + P = Print the current document
+Ctrl + W = Close the close document
+Ctrl + Q = Quit the current application
+
+***************************************************************************
+THE FILESYSTEM:
+***************************************************************************
+
+/ :    The root directory, where everything begins.
+/bin : Contains binaries (programs) that must be present for the
+	system to boot and run.
+/boot: Contains the Linux kernel, initial RAM disk image (for
+	drivers needed at boot time), and the boot loader.
+	Interesting files:
+	/boot/grub/grub.conf or menu.lst, which are used to
+	configure the boot loader
+ 	/boot/vmlinuz, the Linux kerne
+/dev: This is a special directory that contains device nodes.
+	“Everything is a file” also applies to devices. Here is
+	where the kernel maintains a list of all the devices it
+	understands.
+/etc: The /etc directory contains all of the system-wide
+	configuration files. It also contains a collection of shell
+	scripts that start each of the system services at boot time.
+	Everything in this directory should be readable text.
+	Interesting files: While everything in /etc is interesting,
+	here are some of my all-time favorites:
+ 	/etc/crontab, a file that defines when automated jobs
+	will run
+ 	/etc/fstab, a table of storage devices and their
+	associated mount points
+ 	/etc/passwd, a list of the user accounts
+/home:In normal configurations, each user is given a directory
+	in /home. Ordinary users can write files only in their
+	home directories. This limitation protects the system from
+	errant user activity.
+/lib: Contains shared library files used by the core system
+	programs. These are similar to DLLs in Windows.
+/lost+found: Each formatted partition or device using a Linux file-
+	system, such as ext3, will have this directory. It is used
+	in the case of a partial recovery from a filesystem cor-
+	ruption event. Unless something really bad has hap-
+	pened to your system, this directory will remain empty.
+/media: On modern Linux systems the /media directory will
+	contain the mount points for removable media such
+	as USB drives, CD-ROMs, etc. that are mounted
+	automatically at insertion.
+/mnt: On older Linux systems, the /mnt directory contains
+	mount points for removable devices that have been
+	mounted manually.
+/opt: The /opt directory is used to install “optional” software.
+	This is mainly used to hold commercial software products
+	that may be installed on your system.
+/proc: The /proc directory is special. It’s not a real filesystem in
+	the sense of files stored on your hard drive. Rather, it is
+	a virtual filesystem maintained by the Linux kernel. The
+	“files” it contains are peepholes into the kernel itself. The
+	files are readable and will give you a picture of how the
+	kernel sees your computer.
+/root: This is the home directory for the root account.
+/sbin: This directory contains “system” binaries. These are
+	programs that perform vital system tasks that are
+	generally reserved for the superuser.
+/tmp: The /tmp directory is intended for storage of temporary,
+	transient files created by various programs. Some con-
+	figurations cause this directory to be emptied each time
+	the system is rebooted.
+/usr: The /usr directory tree is likely the largest one on a Linux
+	system. It contains all the programs and support files
+	used by regular users.
+/usr/bin: /usr/bin contains the executable programs installed
+	by your Linux distribution. It is not uncommon for this
+	directory to hold thousands of programs.
+/usr/lib: The shared libraries for the programs in /usr/bin.
+/usr/local: The /usr/local tree is where programs that are not
+	included with your distribution but are intended for
+	system-wide use are installed. Programs compiled from
+	source code are normally installed in /usr/local/bin.
+	On a newly installed Linux system, this tree exists, but it
+	will be empty until the system administrator puts some-
+	thing in it.
+/usr/sbin: Contains more system administration programs.
+/usr/share: /usr/share contains all the shared data used by
+	programs in /usr/bin. This includes things like default
+	configuration files, icons, screen backgrounds, sound
+	files, etc.
+/usr/share/doc: Most packages installed on the system will include some
+	kind of documentation. In /usr/share/doc, we will find
+	documentation files organized by package.
+/var: With the exception of /tmp and /home, the directories
+	we have looked at so far remain relatively static; that is,
+	their contents don’t change. The /var directory tree is
+	where data that is likely to change is stored. Various
+	databases, spool files, user mail, etc. are located here.
+/var/log: /var/log contains log files, records of various system
+	activity. These are very important and should be mon-
+	itored from time to time. The most useful one is /var/
+	log/messages. Note that for security reasons on some
+	systems, you must be the superuser to view log files.
+
+
+	
+Monitoring the process
+      ps -eo user,pid,nice,comm,
+      ps aux
+      
+grep,egrep,fgrep,sed>>>>>>>>>>>>>>>for more information go back cbt nuggets
+
+mount and umount>>>>>>>>>>>>>>for mose information go back to cbt nuggets
+ 
